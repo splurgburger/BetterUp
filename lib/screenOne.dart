@@ -1,22 +1,19 @@
 import 'package:flutter/material.dart';
 
-
 class ScreenOne extends StatelessWidget {
-  const ScreenOne({super.key});
-
   @override
   Widget build(BuildContext context) {
-    return const Column(
-      children: <Widget>[
-      Text('Deliver features faster'),
-      Text('Craft beautiful UIs'),
-      Expanded(
-        child: FittedBox(
-          child: FlutterLogo(),
+    return Scaffold(
+      backgroundColor: Colors.red, // Set background color to red
+      appBar: AppBar(
+        title: Text('Screen One'),
+      ),
+      body: Center(
+        child: Text(
+          'Welcome to Screen One!',
+          style: TextStyle(fontSize: 24, color: Colors.white),
         ),
       ),
-    ],
-)
-
+    );
   }
 }
